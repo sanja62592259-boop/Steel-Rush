@@ -11,7 +11,7 @@
   },
   "scores": {
     "quarterfinals": [
-      { "id": "qf1", "team1": "Steel Warriors", "team2": "Iron Legion", "score1": null, "score2": null },
+      { "id": "qf1", "team1": "Steel Warriors", "team2": "Iron Legion", "score1": 3, "score2": 1 },
       { "id": "qf2", "team1": "Thunder Brigade", "team2": "Fire Storm", "score1":null , "score2": null },
       { "id": "qf3", "team1": "Dark Shadows", "team2": "Golden Eagles", "score1": null, "score2": null },
       { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": null, "score2": null }
@@ -25,4 +25,5 @@
     ]
   }
 }
+
 
