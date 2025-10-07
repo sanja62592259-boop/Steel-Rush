@@ -1,6 +1,6 @@
 {
   "teams": {
-    "Steel Warriors": ["_IronBear", "Sn1per_88", "SteelWolf_Pro"],
+    "Steel War": ["_IronBear", "Sn1per_88", "SteelWolf_Pro"],
     "Iron Legion": ["SharpShot_UA", "NightScoutX", "Fixer_One"],
     "Thunder Brigade": ["StormFire_7", "BoomQueen", "MineHunter_13"],
     "Fire Storm": ["IronTusk_91", "ShadowArrow", "FlashScout"],
@@ -11,17 +11,18 @@
   },
   "scores": {
     "quarterfinals": [
-      { "id": "qf1", "team1": "Steel Warriors", "team2": "Iron Legion", "score1": 3, "score2": 1 },
-      { "id": "qf2", "team1": "Thunder Brigade", "team2": "Fire Storm", "score1": 1, "score2": 3 },
-      { "id": "qf3", "team1": "Dark Shadows", "team2": "Golden Eagles", "score1": 2, "score2": 3 },
-      { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": 3, "score2": 0 }
+      { "id": "qf1", "team1": "Steel Warriors", "team2": "Iron Legion", "score1": null, "score2": null },
+      { "id": "qf2", "team1": "Thunder Brigade", "team2": "Fire Storm", "score1":null , "score2": null },
+      { "id": "qf3", "team1": "Dark Shadows", "team2": "Golden Eagles", "score1": null, "score2": null },
+      { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": null, "score2": null }
     ],
     "semifinals": [
-      { "id": "sf1", "score1": 1, "score2": 4 },
-      { "id": "sf2", "score1": 2, "score2": 4 }
+      { "id": "sf1", "score1": null, "score2": null },
+      { "id": "sf2", "score1": null, "score2": null }
     ],
     "final": [
-      { "id": "final", "score1": 5, "score2": 2 }
+      { "id": "final", "score1": null, "score2": null }
     ]
   }
 }
+
