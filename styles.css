@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Rajdhani:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: #0a0a0a;
+  background-image:
+    radial-gradient(ellipse at top, rgba(255, 80, 0, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(255, 120, 0, 0.1) 0%, transparent 60%),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.3) 2px, rgba(0, 0, 0, 0.3) 4px);
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,100,0,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.8) 100%);
+  border: 3px solid;
+  border-image: linear-gradient(90deg, transparent, #ff5500, #ff8800, #ff5500, transparent) 1;
+  box-shadow:
+    0 0 80px rgba(255, 80, 0, 0.4),
+    inset 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: #d4d4d4;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Russo One', sans-serif;
+  text-shadow:
+    0 0 5px rgba(255, 85, 0, 0.8),
+    0 0 10px rgba(255, 85, 0, 0.6),
+    0 0 20px rgba(255, 85, 0, 0.4),
+    3px 3px 0px rgba(0, 0, 0, 0.8),
+    6px 6px 0px rgba(0, 0, 0, 0.4),
+    inset 0 -2px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+  margin-bottom: 10px;
+  position: relative;
+  background: linear-gradient(180deg, #e0e0e0 0%, #a0a0a0 50%, #707070 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 15px rgba(255, 85, 0, 0.6));
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff5500, #ff8800, #ff5500, transparent);
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.8);
+}
+
+.subtitle {
+  color: #ff8800;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 136, 0, 0.6);
+  font-weight: 700;
+}
+
+.bracket-container {
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(25, 25, 25, 0.95) 100%);
+  padding: 40px;
+  border: 3px solid #333;
+  box-shadow:
+    0 0 50px rgba(0, 0, 0, 0.8),
+    inset 0 0 100px rgba(0, 0, 0, 0.5);
+  position: relative;
+  min-height: 800px;
+}
+
+.bracket-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #ff5500, #ff8800, #ff5500, transparent);
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.8);
+}
+
+.bracket {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 40px 20px 30px; 
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 320px;
+  padding-top: 0;
+}
+
+.round-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 900;
+  color: #ff6600;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Russo One', sans-serif;
+  text-shadow:
+    0 0 10px rgba(255, 102, 0, 1),
+    0 0 25px rgba(255, 102, 0, 0.6);
+  padding: 10px 25px;
+  background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.15), transparent);
+  border-top: 2px solid #ff5500;
+  border-bottom: 2px solid #ff5500;
+  z-index: 10;
+}
+
+.round-format {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #ff8800;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Russo One', sans-serif;
+  text-shadow:
+    0 0 8px rgba(255, 136, 0, 0.8),
+    0 0 15px rgba(255, 136, 0, 0.4);
+  padding: 5px 15px;
+  background: linear-gradient(90deg, transparent, rgba(255, 136, 0, 0.1), transparent);
+  z-index: 9;
+}
+
+.match {
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+  margin: 20px 0;
+  padding: 10px;
+  padding-top: 35px;
+  border: 2px solid #444;
+  transition: all 0.3s;
+  position: absolute;
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.6),
+    inset 0 0 20px rgba(0, 0, 0, 0.4);
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  overflow: visible;
+  z-index: 1;
+}
+
+.match::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.match:hover {
+  border-color: #ff5500;
+  box-shadow:
+    0 0 30px rgba(255, 85, 0, 0.4),
+    0 5px 20px rgba(0, 0, 0, 0.6),
+    inset 0 0 20px rgba(255, 85, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.match:hover::before {
+  opacity: 1;
+}
+
+.match-time {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, rgba(255, 85, 0, 0.9) 0%, rgba(255, 120, 0, 0.9) 100%);
+  color: #fff;
+  padding: 4px 16px;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 0;
+  box-shadow: 
+    0 0 15px rgba(255, 85, 0, 0.6),
+    inset 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
+  white-space: nowrap;
+}
+
+.team {
+  padding: 18px 20px;
+  margin: 6px;
+  background: linear-gradient(90deg, rgba(25, 25, 25, 0.9) 0%, rgba(35, 35, 35, 0.9) 100%);
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #555;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  overflow: visible;
+}
+
+.team::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, #ff5500, transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.team:hover {
+  background: linear-gradient(90deg, rgba(40, 30, 20, 0.9) 0%, rgba(50, 40, 30, 0.9) 100%);
+  border-left-color: #ff6600;
+  transform: translateX(8px);
+  box-shadow:
+    -5px 0 15px rgba(255, 85, 0, 0.3),
+    inset 0 0 20px rgba(255, 85, 0, 0.1);
+}
+
+.team:hover::before {
+  opacity: 1;
+}
+
+.team.winner {
+  background: linear-gradient(90deg, rgba(255, 85, 0, 0.25) 0%, rgba(255, 120, 0, 0.15) 50%, rgba(255, 85, 0, 0.1) 100%);
+  border-left: 5px solid #ff5500;
+  box-shadow:
+    inset 0 0 30px rgba(255, 85, 0, 0.2),
+    -5px 0 20px rgba(255, 85, 0, 0.3);
+}
+
+.team.winner::before {
+  opacity: 1;
+  box-shadow: 0 0 10px #ff5500;
+}
+
+.team.winner .team-name {
+  color: #ff6600;
+  font-weight: 700;
+  text-shadow:
+    0 0 10px rgba(255, 102, 0, 0.8),
+    0 0 20px rgba(255, 102, 0, 0.4);
+}
+
+.team.empty {
+  background: rgba(15, 15, 15, 0.6);
+  color: #444;
+  cursor: default;
+  border-left-color: #333;
+}
+
+.team.empty:hover {
+  background: rgba(15, 15, 15, 0.6);
+  border-left-color: #333;
+  transform: none;
+  box-shadow: none;
+}
+
+.team.empty::before {
+  display: none;
+}
+
+.team-name {
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 1.8em;
+  color: #ff6600;
+  text-shadow:
+    0 0 10px rgba(255, 102, 0, 0.8),
+    0 0 20px rgba(255, 102, 0, 0.4);
+  min-width: 40px;
+  text-align: right;
+  font-family: 'Russo One', sans-serif;
+}
+
+.tooltip {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.98) 0%, rgba(35, 25, 15, 0.98) 100%);
+  border: 3px solid #ff5500;
+  padding: 20px;
+  box-shadow:
+    0 0 40px rgba(255, 85, 0, 0.6),
+    0 10px 50px rgba(0, 0, 0, 0.9),
+    inset 0 0 30px rgba(255, 85, 0, 0.1);
+  z-index: 10000;
+  min-width: 280px;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  white-space: nowrap;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff5500, #ff8800, #ff5500, transparent);
+  box-shadow: 0 0 15px rgba(255, 85, 0, 0.8);
+}
+
+.tooltip-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #ff6600;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff5500;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.6);
+}
+
+.tooltip-member {
+  padding: 10px 0;
+  color: #ddd;
+  font-size: 1.1em;
+  border-bottom: 1px solid rgba(255, 85, 0, 0.2);
+  letter-spacing: 0.8px;
+  transition: all 0.2s;
+}
+
+.tooltip-member:hover {
+  color: #ff8800;
+  padding-left: 5px;
+}
+
+.tooltip-member:last-child {
+  border-bottom: none;
+}
+
+.champion {
+  text-align: center;
+  margin-top: 60px;
+  padding: 60px 40px;
+  background:
+    linear-gradient(135deg, rgba(255, 85, 0, 0.2) 0%, rgba(255, 120, 0, 0.1) 50%, rgba(255, 85, 0, 0.05) 100%);
+  border: 4px solid #ff5500;
+  box-shadow:
+    0 0 60px rgba(255, 85, 0, 0.5),
+    inset 0 0 80px rgba(255, 85, 0, 0.15);
+  display: none;
+  animation: slideDown 0.6s ease;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+}
+
+.champion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #ff5500, #ff8800, #ff5500, transparent);
+  box-shadow: 0 0 20px rgba(255, 85, 0, 1);
+}
+
+.champion.show {
+  display: block;
+}
+
+.champion h2 {
+  color: #ff5500;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Russo One', sans-serif;
+  text-shadow:
+    0 0 20px rgba(255, 85, 0, 1),
+    0 0 40px rgba(255, 85, 0, 0.6),
+    0 0 60px rgba(255, 85, 0, 0.4);
+  font-weight: 900;
+  position: relative;
+}
+
+.champion p {
+  font-size: 2.5em;
+  color: #ff8800;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 15px rgba(255, 136, 0, 0.8),
+    0 0 30px rgba(255, 136, 0, 0.4);
+  font-family: 'Russo One', sans-serif;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-50px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.vs-indicator {
+  text-align: center;
+  color: #ff5500;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 8px 0;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(255, 85, 0, 0.8);
+  font-family: 'Russo One', sans-serif;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5em; letter-spacing: 4px; }
+  .bracket { gap: 60px; }
+  .round { min-width: 250px; }
+  .tooltip { position: fixed; transform: none; }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff5500, #ff8800);
+  border-radius: 0;
+  border: 1px solid #ff5500;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6600, #ff9900);
+  box-shadow: 0 0 10px rgba(255, 85, 0, 0.6);
+}
