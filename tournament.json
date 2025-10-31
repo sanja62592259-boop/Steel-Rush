@@ -6,19 +6,19 @@
   },
   "teams": {
     "_ _": ["rockvSS ", "_nikita_x", "u3_BOENKOMATA_TOXA"],
-    "Ку моя тіма": ["lazerok07", "lazerok07", "DeHicka_"],
-    "Thunder Brigade": ["StormFire_7", "BoomQueen", "MineHunter_13"],
-    "Fire Storm": ["IronTusk_91", "ShadowArrow", "FlashScout"],
-    "Dark Shadows": ["NightViper_UA", "GhostFox_77", "TrapMist"],
-    "Golden Eagles": ["SkyAce_UA", "EagleWingX", "MedicSun"],
+    "Ку моя тіма": ["lazerok07", "Julia_ann", "DeHicka_"],
+    "Степісонські Банани ": ["The_CtenaNoBu4", "Monster_Energy_75", "Gnom_na_tanke"],
+    "Кіборги": ["Slayavka29", "anton05051998", "Xo4y_6a6aXy_B_aHraP"],
+    "4SV__Banan4iku": ["NIK1985_16", "EX_Rakf_Rakom", "727djuz74"],
+    "TankRaiders": ["__Wiwek_", "MakFl0w", "romik231082"],
     "Titanium Force": ["TitanShield", "IronBlaze", "SideBreaker"],
     "Red Storm": ["CrimsonFury", "StrongHold_UA", "RoadHawk"]
   },
   "scores": {
     "quarterfinals": [
       { "id": "qf1", "team1": "_ _", "team2": "Ку моя тіма", "score1": 3, "score2": 1, "time": "10:00" },
-      { "id": "qf2", "team1": "Thunder Brigade", "team2": "Fire Storm", "score1": 1, "score2": 3, "time": "11:00" },
-      { "id": "qf3", "team1": "Dark Shadows", "team2": "Golden Eagles", "score1": 2, "score2": 3, "time": "12:00" },
+      { "id": "qf2", "team1": "Степісонські Банани ", "team2": "Кіборги", "score1": 1, "score2": 3, "time": "11:00" },
+      { "id": "qf3", "team1": "4SV__Banan4iku", "team2": "TankRaiders", "score1": 2, "score2": 3, "time": "12:00" },
       { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": 3, "score2": 0, "time": "13:00" }
     ],
     "semifinals": [
@@ -30,4 +30,5 @@
     ]
   }
 }
+
 
