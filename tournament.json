@@ -5,8 +5,8 @@
     "final": "BO5"
   },
   "teams": {
-    "Steel Warriors": ["_IronBear", "Sn1per_88", "SteelWolf_Pro"],
-    "Iron Legion": ["SharpShot_UA", "NightScoutX", "Fixer_One"],
+    "_ _": ["rockvSS ", "_nikita_x", "u3_BOENKOMATA_TOXA"],
+    "Ку моя тіма": ["lazerok07", "lazerok07", "DeHicka_"],
     "Thunder Brigade": ["StormFire_7", "BoomQueen", "MineHunter_13"],
     "Fire Storm": ["IronTusk_91", "ShadowArrow", "FlashScout"],
     "Dark Shadows": ["NightViper_UA", "GhostFox_77", "TrapMist"],
@@ -16,7 +16,7 @@
   },
   "scores": {
     "quarterfinals": [
-      { "id": "qf1", "team1": "Steel Warriors", "team2": "Iron Legion", "score1": 3, "score2": 1, "time": "10:00" },
+      { "id": "qf1", "team1": "_ _", "team2": "Ку моя тіма", "score1": 3, "score2": 1, "time": "10:00" },
       { "id": "qf2", "team1": "Thunder Brigade", "team2": "Fire Storm", "score1": 1, "score2": 3, "time": "11:00" },
       { "id": "qf3", "team1": "Dark Shadows", "team2": "Golden Eagles", "score1": 2, "score2": 3, "time": "12:00" },
       { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": 3, "score2": 0, "time": "13:00" }
@@ -30,3 +30,4 @@
     ]
   }
 }
+
