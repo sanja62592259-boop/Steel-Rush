@@ -22,14 +22,15 @@
       { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": null, "score2": null, "time": "13:00" }
     ],
     "semifinals": [
-      { "id": "sf1", "score1": 1, "score2": 4, "time": "15:00" },
-      { "id": "sf2", "score1": 2, "score2": 4, "time": "16:00" }
+      { "id": "sf1", "score1": null, "score2": null, "time": "15:00" },
+      { "id": "sf2", "score1": null, "score2": null, "time": "16:00" }
     ],
     "final": [
-      { "id": "final", "score1": 5, "score2": 2, "time": "18:00" }
+      { "id": "final", "score1": null, "score2":null, "time": "18:00" }
     ]
   }
 }
+
 
 
 
