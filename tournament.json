@@ -11,15 +11,15 @@
     "Кіборги": ["Slayavka29", "anton05051998", "Xo4y_6a6aXy_B_aHraP"],
     "4SV__Banan4iku": ["NIK1985_16", "EX_Rakf_Rakom", "727djuz74"],
     "TankRaiders": ["__Wiwek_", "MakFl0w", "romik231082"],
-    "Titanium Force": ["TitanShield", "IronBlaze", "SideBreaker"],
-    "Red Storm": ["CrimsonFury", "StrongHold_UA", "RoadHawk"]
+    "Silent Soldier's": ["ergo_151", "aaaz_1_2721280", "Bomber1424"],
+    "Kraken": ["W0IF05", "WePlayer", "Skeeby_2081114"]
   },
   "scores": {
     "quarterfinals": [
       { "id": "qf1", "team1": "_ _", "team2": "Ку моя тіма", "score1": null, "score2": null, "time": "10:00" },
       { "id": "qf2", "team1": "Степісонські Банани ", "team2": "Кіборги", "score1":null, "score2": null, "time": "11:00" },
       { "id": "qf3", "team1": "4SV__Banan4iku", "team2": "TankRaiders", "score1": null, "score2":null, "time": "12:00" },
-      { "id": "qf4", "team1": "Titanium Force", "team2": "Red Storm", "score1": null, "score2": null, "time": "13:00" }
+      { "id": "qf4", "team1": "Silent Soldier's", "team2": "Red Storm", "score1": null, "score2": null, "time": "13:00" }
     ],
     "semifinals": [
       { "id": "sf1", "score1": null, "score2": null, "time": "15:00" },
@@ -30,6 +30,7 @@
     ]
   }
 }
+
 
 
 
